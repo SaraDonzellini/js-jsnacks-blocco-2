@@ -2,15 +2,18 @@
 //? Calcola la somma e la media dei primi 10 numeri di un array.
 //* Calcola la somma, la media e il valore massimo dei primi 10 numeri di un array.
 
-const arrayNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
+const arrayNumbers = [1, 42, 93, 24, 15, 66, 37, 8, 79, 10, 171, 12, 613, 14, 15, 516, 17, 18, 19, 20];
 let somma = 0;
 let media = 0;
 const limite = 10;
-let valoreMassimo = 0;
+let valoreMassimo = arrayNumbers[0];
 
 for (let i = 0; i < limite; i++) {
   somma += arrayNumbers[i];
-  valoreMassimo = Math.max(arrayNumbers[i])
+  
+  if (arrayNumbers[i] > valoreMassimo) {
+    valoreMassimo = arrayNumbers[i];
+  }
 }
 media = somma / limite;
 
