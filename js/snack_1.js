@@ -7,7 +7,7 @@ const ArrayNumbers = []
 for (let i = 0; i < 6; i++) {
   let UserNumber = parseInt(prompt('inserisci un numero'));
 
-  if (!(UserNumber % 2 == 0)){
+  if (!(UserNumber % 2 == 0)) {
     ArrayNumbers.push(UserNumber);
   }
 }
