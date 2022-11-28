@@ -18,3 +18,26 @@ for (let i = 0; i < names.length; i++) {
 console.log(people);
 
 
+//soluzioni
+
+
+const guests = []
+
+for ( let i = 0; i < Math.ceil(Math.random() * 25 + 4);i++ ){
+  const randomNamesIndex= Math.floor(Math.random * names.length);
+  const randomLastNamesIndex= Math.floor(Math.random * lastnames.length);
+
+  const guest = names[randomNamesIndex] + " " + lastnames[randomLastNamesIndex];
+
+  guests.push(guest);
+}
+
+
+while ( guests.length < 20 ) {
+  const randomNamesIndex= Math.floor(Math.random * names.length);
+  const randomLastNamesIndex= Math.floor(Math.random * lastnames.length);
+
+  const guest = names[randomNamesIndex] + " " + lastnames[randomLastNamesIndex];
+
+  guests.push(guest);
+}
