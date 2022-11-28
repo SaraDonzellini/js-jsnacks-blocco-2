@@ -24,20 +24,22 @@ console.log(people);
 const guests = []
 
 for ( let i = 0; i < Math.ceil(Math.random() * 25 + 4);i++ ){
-  const randomNamesIndex= Math.floor(Math.random * names.length);
-  const randomLastNamesIndex= Math.floor(Math.random * lastnames.length);
+  const randomNamesIndex= Math.floor(Math.random() * (names.length));
+  const randomLastNamesIndex= Math.floor(Math.random() * (lastnames.length));
 
   const guest = names[randomNamesIndex] + " " + lastnames[randomLastNamesIndex];
 
   guests.push(guest);
 }
-
+console.log(guests)
 
 while ( guests.length < 20 ) {
-  const randomNamesIndex= Math.floor(Math.random * names.length);
-  const randomLastNamesIndex= Math.floor(Math.random * lastnames.length);
+  const randomNamesIndex= Math.floor(Math.random() * (names.length));
+  const randomLastNamesIndex= Math.floor(Math.random() * (lastnames.length));
 
   const guest = names[randomNamesIndex] + " " + lastnames[randomLastNamesIndex];
 
   guests.push(guest);
 }
+
+console.log(guests)
